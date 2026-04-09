@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap | Aswiini S</title>
+    <meta name="description"
+        content="Sitemap of Aswiini S's portfolio website. Easily navigate through sections, projects, and resources.">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .sitemap-section {
+            padding-top: 120px;
+            min-height: 100vh;
+            background: var(--bg-dark);
+        }
+
+        .sitemap-tree {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .sitemap-tree ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .sitemap-tree li {
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .sitemap-tree li::before {
+            content: '→';
+            color: var(--primary-color);
+            margin-right: 10px;
+        }
+
+        .sitemap-link {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .sitemap-link:hover {
+            color: var(--primary-color);
+            padding-left: 5px;
+        }
+
+        .file-type {
+            font-size: 0.8rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="main-nav">
+        <div class="nav-logo">
+            <span>AS</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html#home" class="nav-link">Home</a></li>
+            <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content" style="margin-left: 0;">
+        <section class="sitemap-section">
+            <div class="section-container">
+                <h1 class="section-title">Site Map</h1>
+                <div class="sitemap-tree">
+                    <ul>
+                        <li><a href="index.html" class="sitemap-link">Homepage</a>
+                            <ul>
+                                <li><a href="index.html#home" class="sitemap-link">Introduction</a></li>
+                                <li><a href="index.html#about" class="sitemap-link">About Me</a></li>
+                                <li><a href="index.html#education" class="sitemap-link">Education</a></li>
+                                <li><a href="index.html#skills" class="sitemap-link">Skills & Expertise</a></li>
+                                <li><a href="index.html#positions" class="sitemap-link">Positions & Leadership</a></li>
+                                <li><a href="index.html#projects" class="sitemap-link">Projects</a></li>
+                                <li><a href="index.html#certifications" class="sitemap-link">Certifications</a></li>
+                                <li><a href="index.html#contact" class="sitemap-link">Contact</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="assets/AswiniM_resume.pdf" class="sitemap-link">Resume / CV</a> <span
+                                class="file-type">PDF</span></li>
+                        <li><a href="sitemap.xml" class="sitemap-link">XML Sitemap</a> <span
+                                class="file-type">XML</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Aswiini S</h3>
+                <p>Developer | Cyber Security Analyst | Programmer</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aswiini S. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
